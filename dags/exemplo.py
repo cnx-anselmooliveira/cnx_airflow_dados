@@ -23,7 +23,7 @@ def task_5():
 with DAG(
     dag_id="dag_teste_5_subtasks",
     start_date=datetime(2024, 1, 1),
-    schedule_interval=None,
+    schedule=None,
     catchup=False,
     tags=["teste"]
 ) as dag:
