@@ -515,12 +515,12 @@ data:
 
   # Otherwise pass connection values in
   metadataConnection:
-    user: postgres
-    pass: postgres
-    protocol: postgresql
-    host: airflow-postgresql
-    port: 5432
-    db: postgres
+    user: airflowuser
+    pass: airflowpass
+    protocol: mysql
+    host: airflowdb.c90cgg0i29ys.us-east-1.rds.amazonaws.com
+    port: 3306
+    db: airflowdb
     sslmode: disable
     # Add custom annotations to the metadata connection secret
     secretAnnotations: {}
