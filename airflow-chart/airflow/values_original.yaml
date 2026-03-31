@@ -517,7 +517,7 @@ data:
   metadataConnection:
     user: airflowuser
     pass: airflowpass
-    protocol: mysql
+    protocol: mysql+pymysql
     host: airflowdb.c90cgg0i29ys.us-east-1.rds.amazonaws.com
     port: 3306
     db: airflowdb
@@ -3513,7 +3513,7 @@ databaseCleanup:
 # Uses bitnamilegacy images to avoid Bitnami licensing restrictions
 # Not recommended for production - use external database instead
 postgresql:
-  enabled: true
+  enabled: false
   image:
     repository: bitnamilegacy/postgresql
     tag: "16.1.0-debian-11-r15"
